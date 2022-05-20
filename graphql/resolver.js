@@ -1,5 +1,5 @@
 const axios = require("axios").default;
-const endpoint = "https://food-recipe-app-v1.herokuapp.com/v1/graphql";
+const endpoint = process.env.HASURA_END_POINT;
 const header = {
   "content-type": "application/json",
   "x-hasura-admin-secret": process.env.HASURA_ADMIN_SECRET,
