@@ -2,7 +2,7 @@ const axios = require("axios").default;
 const endpoint = "https://food-recipe-app-v1.herokuapp.com/v1/graphql";
 const header = {
   "content-type": "application/json",
-  "x-hasura-admin-secret": "fraj0rdn",
+  "x-hasura-admin-secret": process.env.HASURA_ADMIN_SECRET,
 };
 
 const CREATE_USER_GQL = `
